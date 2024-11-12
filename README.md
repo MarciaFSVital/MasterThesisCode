@@ -24,14 +24,15 @@ See requirements.txt
 
 To install all packages using this file just type
 
-######
-  ´pip install requirements.txt´
+```
+pip install requirements.txt
+```
 
 inside your python virtual environment.
 
 **R packages to install:**
 
-To install the IRkernel to run Rin notebooks follow these instructions (https://irkernel.github.io/installation/).
+To install the IRkernel to run Rin notebooks follow these [instructions](https://irkernel.github.io/installation/).
 
 Required packages can be installed using notebook 7.
 
