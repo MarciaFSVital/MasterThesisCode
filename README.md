@@ -24,8 +24,8 @@ See requirements.txt
 
 To install all packages using this file just type
 
-##
-<tab><tab>code/pip install requirements.txt
+######
+  pip install requirements.txt
 
 inside your python virtual environment.
 
