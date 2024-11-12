@@ -13,22 +13,31 @@ To reproduce this project just clone or download this repository and create a Py
 If you use our data or analysis in your research, please cite us!
 
 ## System Requirements
+
 Our code was run using the following software:
 -	Python version 3.10.12
 -	R version 4.1.2
 
 **Python packages to install:**
+
 See requirements.txt
+
 To install all packages using this file just type
+
 `pip install requirements.txt`
+
 inside your python virtual environment.
 
 **R packages to install:**
-To install the IRkernel to run R in notebooks follow these instructions (https://irkernel.github.io/installation/).
+
+To install the IRkernel to run Rin notebooks follow these instructions (https://irkernel.github.io/installation/).
+
 Required packages can be installed using notebook 7.
 
 ## Analysis notebooks:
+
 The notebooks contain all the necessary data and code to allow others to reproduce the results presented in this thesis and to recreate all associated figures. To ensure consistent results, run the notebooks in the following order:
+
 - get_PPIs.ipynb: this Python notebook covers …
 - preprocessing.ipynb: this Python notebook covers …
 - driver_neighbours_analysis.ipynb: this Python notebook covers  …
