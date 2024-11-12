@@ -32,7 +32,7 @@ inside your python virtual environment.
 
 **R packages to install:**
 
-To install the IRkernel to run Rin notebooks follow these [instructions](https://irkernel.github.io/installation/).
+To install the IRkernel to run R in notebooks follow these [instructions](https://irkernel.github.io/installation/).
 
 Required packages can be installed using notebook 7.
 
