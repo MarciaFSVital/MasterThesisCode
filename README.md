@@ -15,8 +15,8 @@ If you use our data or analysis in your research, please cite us!
 ## System Requirements
 
 Our code was run using the following software:
--	Python version 3.10.12
--	R version 4.1.2
+-	Python version 3.10.14
+-	R version 4.3.1
 
 **Python packages to install:**
 
@@ -32,9 +32,7 @@ inside your python virtual environment.
 
 **R packages to install:**
 
-To install the IRkernel to run R in notebooks follow these [instructions](https://irkernel.github.io/installation/).
-
-Required packages can be installed using notebook 7.
+Required packages can be installed using script 5.
 
 ## Analysis notebooks:
 
@@ -44,5 +42,5 @@ The notebooks contain all the necessary data and code to allow others to reprodu
 - preprocessing.ipynb: this Python notebook covers …
 - driver_neighbours_analysis.ipynb: this Python notebook covers  …
 - DINTs_analysis.ipynb: this Python notebook covers …
-- fishers_enrichment.R: this covers …
+- fishers_enrichment.R: this R script covers …
 - machine_learning.ipynb: this Python notebook covers …
