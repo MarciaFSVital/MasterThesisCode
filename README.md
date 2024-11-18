@@ -40,7 +40,7 @@ The notebooks contain all the necessary data and code to allow others to reprodu
 
 - *get_PPIs.ipynb*: this Python notebook covers Results and Discussion section 3.1. 
 - *preprocessing.ipynb*: this Python notebook covers Results and Discussion section 3.1. 
-- *driver_neighbours_analysis.ipynb*: this Python notebook covers Results and Discussion subsection 3.2.1. 
+- *driver_neighbours_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.2 and subsection 3.2.1. 
 - *DINTs_analysis.ipynb*: this Python notebook covers …
 - *fishers_enrichment.R*: this R script covers …
 - *machine_learning.ipynb*: this Python notebook covers Results and Discussion section 3.5 and subsections 3.5.1 - 3.5.2. 
