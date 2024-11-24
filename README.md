@@ -32,7 +32,7 @@ inside your python virtual environment.
 
 **R packages to install:**
 
-Required packages can be installed using script 5.
+Required packages can be installed using script 6.
 
 ## Analysis notebooks:
 
@@ -41,6 +41,7 @@ The notebooks contain all the necessary data and code to allow others to reprodu
 - *get_PPIs.ipynb*: this Python notebook covers Results and Discussion section 3.1. 
 - *preprocessing.ipynb*: this Python notebook covers Results and Discussion section 3.1. 
 - *driver_neighbours_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.2 and subsection 3.2.1. 
-- *DINTs_analysis.ipynb*: this Python notebook covers …
+- *neighbour_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.3 and subsections 3.3.1 - 3.3.6.
+- *driver_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.4 and subsections 3.4.1 - 3.4.3.
 - *fishers_enrichment.R*: this R script covers …
 - *machine_learning.ipynb*: this Python notebook covers Results and Discussion section 3.5 and subsections 3.5.1 - 3.5.2. 
