@@ -1,10 +1,38 @@
-setwd("/Users/marcia/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MARCIA")
+# We employed Fisher’s Exact Test to determine whether the frequency of each enriched term within each category were randomly 
+# distributed or biased toward specific categories.
+# Fisher’s Exact Test is particularly well-suited for this analysis due to its ability to handle small sample sizes and categorical data.
+
+# Check and install required packages if missing
+#if (!requireNamespace("rstudioapi", quietly = TRUE)) {
+#  install.packages("rstudioapi")
+#}
+
+# Create data directory if it doesn't exist
+if (!dir.exists("data")) {
+  dir.create("data")
+}
+
+# Load required libraries
 library(stats)
 library(vcd)
 
+# Set the working directory to where your script is located (optional)
+#setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # Only use if running in RStudio
+
+setwd("/Users/marcia/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MARCIA")
+
+# First, verify files exist and print helpful messages
+data_files <- c("enrichment_results.csv", "filtered_drivers.csv")
+for (file in data_files) {
+  file_path <- file.path("data", file)
+  if (!file.exists(file_path)) {
+    stop(paste("Error:", file, "not found in data directory. Make sure to run the Python script first to generate the required files."))
+  }
+}
+
 # Load the data
-results_df <- read.csv("enrichment_results.csv")
-filtered_drivers_df <- read.csv("driver_stats.csv", row.names = "driver")  # Set driver as index
+results_df <- read.csv("data/enrichment_results.csv")
+filtered_drivers_df <- read.csv("data/filtered_drivers.csv", row.names = "driver") # Set driver as index
 
 # Calculate the number of drivers in each category
 num_drivers_D0 <- nrow(subset(filtered_drivers_df, group == 'non_sign'))
@@ -73,5 +101,9 @@ cramers_v_df <- do.call(rbind, lapply(cramers_v_list, as.data.frame))
 final_results <- merge(fisher_df, chi_square_df, by = c("Source", "Name"))
 final_results <- merge(final_results, cramers_v_df, by = c("Source", "Name"))
 
+# Count significant results (adjusted p-value < 0.05)
+significant_count <- sum(final_results$adjusted.p.value < 0.05)
+print(paste("Number of significant terms (adjusted p-value < 0.05):", significant_count))
+
 # Save the final results to a CSV file
-write.csv(final_results, "combined_statistical_results.csv", row.names = FALSE)
+write.csv(final_results, "data/combined_statistical_results.csv", row.names = FALSE)
