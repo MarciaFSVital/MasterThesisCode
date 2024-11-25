@@ -43,5 +43,6 @@ The notebooks contain all the necessary data and code to allow others to reprodu
 - *driver_neighbours_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.2 and subsection 3.2.1. 
 - *neighbour_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.3 and subsections 3.3.1 - 3.3.6.
 - *driver_analysis.ipynb*: this Python notebook covers Results and Discussion section 3.4 and subsections 3.4.1 - 3.4.2.
-- *fishers_enrichment.R*: this R script covers …
+- *fishers_enrichment.R*: this R script covers Results and Discussion subsection 3.4.2.
+- *continue_driver_analysis.ipynb*: this Python notebook covers Results and Discussion subsection 3.4.3.
 - *machine_learning.ipynb*: this Python notebook covers Results and Discussion section 3.5 and subsections 3.5.1 - 3.5.2. 
