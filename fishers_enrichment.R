@@ -3,22 +3,25 @@
 # Fisher’s Exact Test is particularly well-suited for this analysis due to its ability to handle small sample sizes and categorical data.
 
 # Check and install required packages if missing
-#if (!requireNamespace("rstudioapi", quietly = TRUE)) {
-#  install.packages("rstudioapi")
-#}
+required_packages <- c("stats", "vcd")
+
+# Function to install missing packages
+install_if_missing <- function(package) {
+  if (!requireNamespace(package, quietly = TRUE)) {
+    install.packages(package)
+  }
+  library(package, character.only = TRUE)
+}
+
+# Install and load all required packages
+lapply(required_packages, install_if_missing)
 
 # Create data directory if it doesn't exist
 if (!dir.exists("data")) {
   dir.create("data")
 }
 
-# Load required libraries
-library(stats)
-library(vcd)
-
-# Set the working directory to where your script is located (optional)
-#setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # Only use if running in RStudio
-
+# Set the working directory to where your script is located 
 setwd("/Users/marcia/Library/CloudStorage/OneDrive-UniversidadedeLisboa/MARCIA")
 
 # First, verify files exist and print helpful messages
@@ -47,6 +50,8 @@ num_drivers_D <- c(num_drivers_D0, num_drivers_D1, num_drivers_D2, num_drivers_D
 
 # Initialize an empty list to store results
 data_list <- list()
+
+set.seed(42)  # Add before statistical tests to ensure consistent random sampling
 
 # Loop over each term to perform Fisher's exact test
 for (term in 1:nrow(results_df)) {
