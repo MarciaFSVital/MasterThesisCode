@@ -6,7 +6,7 @@
 
 <sup>1</sup> [RNA Systems Biology Lab](https://github.com/GamaPintoLab)
 
-Code to reproduce methods & results from my Master's Thesis Project. I will add a link to the final document as soon as it is officially published.
+Code to reproduce methods & results from my Master's Thesis Project. The raw and processed datasets are stored in a designated [data repository](https://zenodo.org/records/14660370). I will add a link to the final document as soon as it is officially published.
 
 To reproduce this project just clone or download this repository and create a Python virtual environment. To learn how to create a virtual environment refer to [creating a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
 
